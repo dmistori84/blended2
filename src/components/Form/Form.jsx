@@ -8,6 +8,7 @@ export const Form = ({ addTodos }) => {
   const handleSubmit = event => {
     event.preventDefault();
     addTodos(value);
+    setValue('');
   };
 
   const handleChange = event => {

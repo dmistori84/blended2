@@ -4,11 +4,18 @@
   align-items: center;
   justify-content: center;
 
-  height: 100%;
+  width: 220px;
+  height: 170px;
 
   background-color: var(--color-light);
 
   border: 4px solid #fff;
   border-radius: 16px;
   overflow: hidden;
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

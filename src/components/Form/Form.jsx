@@ -2,12 +2,13 @@ import { FiSearch } from 'react-icons/fi';
 import style from './Form.module.css';
 import { useState } from 'react';
 
-export const Form = ({ addTodos }) => {
+export const Form = ({ onSubmit }) => {
   const [value, setValue] = useState('');
+  // const userInputValue = useContext();
 
   const handleSubmit = event => {
     event.preventDefault();
-    addTodos(value);
+    onSubmit(value);
     setValue('');
   };
 

@@ -46,7 +46,7 @@ export const Todos = () => {
 
   return (
     <>
-      <Form addTodos={addTodos} />
+      <Form onSubmit={addTodos} />
       {todos.length === 0 && (
         <Text textAlign="center">There are no any todos ...</Text>
       )}
